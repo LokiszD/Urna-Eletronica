@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.urna{
+    display: flex;
+    background-color: rgb(250, 244, 225);
+    padding: 30px;
+}
+
+.tela{
+    width: 500px;
+    height: 400px;
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(237, 237, 237));
+    border: solid 2px rgb(181, 181, 181);
+}
+
+.teclas{
+    margin-left: 30px;
+    background-color: rgb(38, 38, 38);
+    color: white;
+    width: 350px;
+    border-radius: 5px;
+}
+
+.alinhar-teclas{
+    margin-top: 30px;
+}
+
+.teclado-linha{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.teclado-botao{
+    width: 60px;
+    height: 40px;
+    background-color: rgb(38, 38, 38);
+    box-shadow: 5px 5px 0px 3px black;
+    border: solid 1px black;
+    margin: 10px;
+    font-size: 20pt;
+}
+
+.teclado-botao-especial{
+    width: 90px;
+    height: 40px;
+    background-color: rgb(148, 0, 0);  /*Mudar*/
+    margin: 30px auto auto auto;
+    text-align: center;
+}
+
