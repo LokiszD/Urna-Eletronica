@@ -1,21 +1,30 @@
+@keyframes pisca{
+    0% {opacity: 0.1;}
+    50% {opacity: 1;}
+    100% {opacity: 0.1;}
+}
+
 body{
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .urna{
     display: flex;
-    background-color: rgb(250, 244, 225);
+    background-color: rgb(250, 242, 214);
     padding: 30px;
 }
 
 .tela{
+    display: flex;
+    flex-direction: column;
     width: 500px;
     height: 400px;
-    background: linear-gradient(to right, rgb(255, 255, 255), rgb(237, 237, 237));
-    border: solid 2px rgb(181, 181, 181);
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(213, 213, 213));
+    border: solid 2px rgb(216, 216, 216);
 }
 
 .teclas{
@@ -34,6 +43,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .teclado-botao{
@@ -44,13 +54,110 @@ body{
     border: solid 1px black;
     margin: 10px;
     font-size: 20pt;
+    cursor: pointer;
 }
 
 .teclado-botao-especial{
     width: 90px;
     height: 40px;
-    background-color: rgb(148, 0, 0);  /*Mudar*/
     margin: 30px auto auto auto;
+    color: black;
+    border-radius: 3px;
     text-align: center;
+    cursor: pointer;
 }
 
+.teclado-botao-especial.branco{
+    background-color: white;
+}
+
+.teclado-botao-especial.corrige{
+    background-color: rgb(255, 60, 0);
+}
+
+.teclado-botao-especial.confirma{
+    background-color: rgb(0, 192, 22);
+    height: 50px;
+    margin-top: 20px;
+}
+
+.d-1{
+    flex: 1;
+    display: flex;
+    padding-left: 5px;
+}
+
+.d-1 .info{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.d-1 .d-1-1{
+    font-weight: bolder;
+    height: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.d-1 .d-1-2{
+    font-weight: bolder;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.d-1 .d-1-3{
+    height: 50px;
+}
+
+.numero{
+    border: solid 2px black;
+    display: inline-block;
+    width: 30px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20pt;
+}
+
+.numero.pisca{
+    animation-name: pisca;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+.d-1 .d-1-4{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: baseline;
+    line-height: 10px;
+}
+
+.d-1 .img{
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.img-item{
+    border: 2px solid black;
+    margin: 5px;
+    background-color: rgb(255, 255, 255);
+}
+
+.img-item.small{
+    width: 70%;
+}
+
+.img-item img{
+    width: 100%;
+}
+
+.d-2{
+    border-top: 2px solid black;
+    padding: 5px;
+}
